@@ -53,17 +53,49 @@ html, body {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+/* iOS specific visual smoothing and touch behavior */
+html, body, button, input, textarea, select {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-overflow-scrolling: touch; /* smoother scrolling on iOS */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
 input, textarea, select, button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	border-radius: 0;
+    font-family: inherit;
+    color: inherit;
 }
 
 textarea { resize: vertical; }
 
 a, button {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Prevent iOS from changing the appearance of autofilled inputs */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset !important;
+	box-shadow: 0 0 0px 1000px white inset !important;
+	-webkit-text-fill-color: inherit !important;
+}
+
+/* Ensure placeholders look consistent across browsers */
+::placeholder {
+	color: rgba(0,0,0,0.35);
+	opacity: 1; /* fix Firefox */
+}
+
+/* Disable double-tap to zoom on iOS for better control in LP */
+html, body {
+	touch-action: manipulation;
 }
 
 img, picture, video, canvas {

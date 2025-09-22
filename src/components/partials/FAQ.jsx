@@ -32,8 +32,8 @@ const Tasks = styled.ol`
 `
 
 export default function FAQ() {
-    // state to keep track of which question is open (by index or id)
-    // default to 0 so the first question is open by default
+    // accordion behavior: only one question open at a time
+    // store the open question index (or null for none)
     const [openIndex, setOpenIndex] = React.useState(0);
 
     const handleToggle = (index) => {

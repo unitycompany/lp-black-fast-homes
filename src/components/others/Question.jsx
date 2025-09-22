@@ -42,7 +42,9 @@ const Item = styled.li`
         & button {
             padding: 8px;
             border-radius: 6px;
-            font-size: 16px;
+        /* Avoid negative margin when closed: it causes headers to overlap and appear to disappear
+           when the body is collapsed. Use conditional margin based on $isOpen prop. */
+        margin-bottom: ${props => props.$isOpen ? '-12px' : '0'};
             display: flex;
             align-items: center;
             justify-content: center;
@@ -99,7 +101,7 @@ export default function Question({
 
     return (
         <>
-            <Item $isOpen={isOpen} data-aos="fade-up">
+            <Item $isOpen={isOpen}>
                 <div className="head" onClick={onToggle} role="button" aria-expanded={isOpen}>
                     <span>{questionText}</span>
                     <button aria-hidden>
