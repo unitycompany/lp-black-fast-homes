@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color--black: #1e1e1e;
+    --color--black-light: #9a9a9a;
+    --color--white: #ffffff;
+    --color--background-white: #f7f7f7;
+    --color--gray: #5d5d5d;
+    --color--airbnb: #ff5a5f;
+    --color--brown: #b05216;
+    --color--green: #828e51;
+
+     --color--green-hover: #4d5615;
+
+    --color--green-surface: #828e5110;
+    --color--green-border: #828e5120;
+
+    --color--brown-surface: #b0521610;
+    --color--brown-border: #b0521620;
+
+    --color--airbnb-surface: #ff5a5f10;
+    --color--airbnb-border: #ff5a5f20;
+
+    --color--black-surface: #1e1e1e60;
+    --color--black-border: #1e1e1e50;
+
+    --degrade-airbnb: linear-gradient(90deg, #ff5a5f 0%, #993639 100%);
+
+    --font-urbanist: 'Urbanist', sans-serif;
+
+    --border-radius-sm: 10px;
+    --border-radius-md: 14px;
+    --border-radius-lg: 18px;
+    --border-radius-full: 9999px;
+
+    --shadow-sm: 0 0px 2px rgba(0, 0, 0, 0.25);
+}
