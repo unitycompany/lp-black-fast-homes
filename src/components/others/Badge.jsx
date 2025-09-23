@@ -15,6 +15,8 @@ const Content = styled.div`
 
     @media (max-width: 768px){
         position: absolute;
+        width: max-content;
+        max-width: fit-content;
         top: 20px;
         right: 20px;
         border-radius: 12px;

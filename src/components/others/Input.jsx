@@ -84,7 +84,7 @@ const InputField = styled.div`
             opacity: 0.4;
 
             @media (max-width: 768px){
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }
