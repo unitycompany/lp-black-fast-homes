@@ -14,8 +14,8 @@ const Container = styled.section`
     flex-direction: column;
     gap: 26px;
     padding: 14px 18px;
-    background-color: var(--color--white);
-    border: 1px solid #00000010;
+    background-color: var(--color--black);
+    border: 1px solid #ffffff10;
     border-radius: 22px;
 
     @media (max-width: 768px) {
@@ -48,7 +48,7 @@ const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 42px;
-    background: var(--color--background-white);
+    background: var(--color--background-black);
     padding: 16px;
     border-radius: 16px;
 
@@ -70,12 +70,12 @@ const Grafic = styled.div`
     gap: 28px;
     padding: 18px;
     border-radius: 16px;
-    background: linear-gradient(-90deg, var(--color--background-white) 0%, #FFFFFF 100%);
+    background: linear-gradient(-90deg, var(--color--background-black) 0%, #000000 100%);
 
     @media (max-width: 768px){
         width: 100%;
         padding: 14px;
-        background: linear-gradient(0deg, var(--color--background-white) 0%, #FFFFFF 100%);
+        background: linear-gradient(0deg, var(--color--background-black) 0%, #000000 100%);
     }
 `
 
@@ -131,8 +131,8 @@ export default function Metrics() {
                     <Grafic>
                         <Title 
                             children={`Métricas do crescimento pela <b>busca de chalés <i>(unique stays)</i></b> na escolha da hospedagem`}
-                            colorAdjust="var(--color--black)"
-                            textColor="var(--color--gray)"
+                            colorAdjust="var(--color--white-light)"
+                            textColor="var(--color--white)"
                             fontSize="22px"
                             fontSizeMobile="20px"
                         />
@@ -152,10 +152,12 @@ export default function Metrics() {
                         />
                         <Description 
                             children={`<b>Diversas pesquisam apontam</b> o crescimento e a busca por cháles!`}
-                            colorAdjust="var(--color--gray)"
+                            colorAdjust="var(--color--white-light)"
                         />
                         <Button 
-                            color="var(--color--green)"
+                            color="var(--color--white)"
+                            textColor="var(--color--black)"
+                            colorBorder="var(--color--white)"
                             onClick={() => {
                                 const el = document.getElementById('contactForm');
                                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });

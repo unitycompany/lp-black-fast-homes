@@ -21,7 +21,7 @@ const Text = styled.div`
     & span {
         font-size: 20px;
         font-weight: 500;
-        color: var(--color--green);
+        color: var(--color--white);
         line-height: 1;
 
         @media (max-width: 768px){
@@ -33,6 +33,7 @@ const Text = styled.div`
 const Label = styled.h4`
     font-size: 18px;
     font-weight: 500;
+    color: var(--color--white);
 
     @media (max-width: 768px){
         font-size: 16px;
@@ -51,7 +52,7 @@ const Field = styled.div`
     & span {
         width: 100%;
         font-size: 12px;
-        color: var(--color--gray);
+        color: var(--color--white-light);
     }
 `
 
@@ -66,8 +67,9 @@ const InputField = styled.div`
         flex: 1;    
         border: none;
         padding: 8px 0px;
+        background: transparent;
         font-size: 18px;
-        color: var(--color--green);
+        color: var(--color--white);
 
         @media (max-width: 768px){
             width: 100%;
@@ -80,7 +82,7 @@ const InputField = styled.div`
 
         &::placeholder{
             font-size: 18px;
-            color: var(--color--green);
+            color: var(--color--white-light);
             opacity: 0.4;
 
             @media (max-width: 768px){
@@ -90,8 +92,8 @@ const InputField = styled.div`
     }
 
     & button {
-        background: var(--color--green);
-        color: var(--color--white);
+        background: var(--color--white);
+        color: var(--color--black);
         border-radius: 6px;
         border: none;
         padding: 6px 10px;
@@ -106,7 +108,7 @@ const InputField = styled.div`
 
         & span {
             font-size: 12px;
-            color: var(--color--gray);
+            color: var(--color--white);
 
             @media (max-width: 768px){
                 font-size: 10px;
@@ -115,7 +117,8 @@ const InputField = styled.div`
 
         & h4 {
             white-space: nowrap;
-            font-weight: 600;
+            font-weight: 500;
+            color: var(--color--white);
 
             @media (max-width: 768px){
                 font-size: 14px;
@@ -127,7 +130,7 @@ const InputField = styled.div`
 const Line = styled.div`
     width: 100%;
     height: 1px;
-    background-color: #00000020;
+    background-color: #ffffff20;
 `    
 
 export default function Input({

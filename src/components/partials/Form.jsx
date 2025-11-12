@@ -13,11 +13,13 @@ const Container = styled.section`
     padding: 28px 22px;
     border-radius: 16px;
     width: 100%;
+    max-width: 500px;
     gap: 22px;
     flex: 1;
     box-shadow: inset 0 0 0 0.2px rgba(0, 0, 0, 0.4);
 
     @media (max-width: 768px){
+        width: 100%;
         padding: 22px 18px;
     }
 `
@@ -223,7 +225,7 @@ export default function Form() {
             <Container>
                 <Title 
                     children={"Preencha o formulário para entrar em contato"}
-                    textColor="var(--color--green)"
+                    textColor="var(--color--white)"
                     fontSize="32px"
                 />
                 {sent ? (

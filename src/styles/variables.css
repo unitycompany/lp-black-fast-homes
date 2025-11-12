@@ -4,16 +4,21 @@
     --color--black: #1e1e1e;
     --color--black-light: #9a9a9a;
     --color--white: #ffffff;
+    --color--white-light: #c4c4c4;
     --color--background-white: #f7f7f7;
+    --color--background-black: #100C08;
     --color--gray: #5d5d5d;
     --color--airbnb: #ff5a5f;
     --color--brown: #b05216;
-    --color--green: #828e51;
+    --color--green: #E42024;
 
-     --color--green-hover: #4d5615;
+     --color--green-hover: #bb0e11;
 
-    --color--green-surface: #828e5110;
-    --color--green-border: #828e5120;
+    --color--green-surface: #E4202410;
+    --color--green-border: #E4202420;
+
+    --color--white-surface: #f1f1f110;
+    --color--white-border: #f1f1f120;
 
     --color--brown-surface: #b0521610;
     --color--brown-border: #b0521620;

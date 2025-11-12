@@ -36,12 +36,10 @@ export default function Render() {
             <Content>
                 {/* <Header /> */}
                     <Hero />
-                        <Airbnb />
-                            <Metrics />
-                                <Portfolio />
-                                    <Steps />
-                                        <FaqForm />
-                                            <Footer />
+                        <Metrics />
+                            <Portfolio />
+                                    <FaqForm />
+                                        <Footer />
             </Content>
         </>
     )

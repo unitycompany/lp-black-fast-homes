@@ -11,7 +11,7 @@ const Content = styled.div`
     width: 100%;
     padding: 8px;
     border-radius: 22px;
-    background-color: var(--color--black);
+    background-color: var(--color--background-black);
     height: 280px;
     gap: 12px;
 
@@ -155,7 +155,7 @@ const Info = styled.div`
         & h4 {
             font-size: 22px;
             font-weight: 500;
-            color: var(--color--green);
+            color: var(--color--black);
         }
     }
 
@@ -189,6 +189,39 @@ const Info = styled.div`
     }
 `
 
+const Price = styled.div`
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 8px;
+
+    & h2 {
+        font-size: 16px;
+        color: var(--color--white-light);
+        line-height: 100%;
+
+        & strong {
+            font-weight: 400;
+            text-decoration: line-through;
+        }   
+    }
+
+    & > p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        color: var(--color--white-light);
+
+        & strong {
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--color--green);
+        }
+    }
+`
+
 export default function House({
     imageUrl,
     nameHouse,
@@ -201,7 +234,8 @@ export default function House({
     suites,
     banheiros,
     garagem,
-    gourmet
+    gourmet,
+    price = 120000
 }) {
     const [expanded, setExpanded] = useState(false);
 
@@ -221,10 +255,15 @@ export default function House({
                             textColor="var(--color--white)"
                             fontSizeMobile="32px"
                         />
+                        <Price>
+                            <h2>De <strong>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price * 1.3)}</strong></h2>
+                            <p>A partir de <strong>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price)}</strong></p>
+                        </Price>
                     </aside>
                     <Button 
                         color="var(--color--white)"
-                        textColor="var(--color--green)"
+                        textColor="var(--color--black)"
+                        colorBorder="var(--color--white)"
                         onClick={() => {
                                 const el = document.getElementById('contactForm');
                                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });

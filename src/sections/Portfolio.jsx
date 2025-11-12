@@ -13,8 +13,8 @@ const Container = styled.section`
     flex-direction: column;
     gap: 26px;
     padding: 14px 18px;
-    background-color: var(--color--white);
-    border: 1px solid #00000010;
+    background-color: var(--color--black);
+    border: 1px solid #ffffff10;
     border-radius: 22px;
 
     @media (max-width: 768px) {
@@ -69,18 +69,19 @@ export default function Portfolio() {
                 </Texts>
                 <Houses>
                     <House 
-                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public"
-                        nameHouse="Chalé Araucária"
-                        typeHouse="A-frame"
-                        areaTotal="85,47"
-                        larguraXFundo="7,60 x 9,52"
-                        loteMinimo="12 x 30"
-                        pavimentos="02"
+                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/94049068-fdfa-4ff8-cd77-c4059079c200/public"
+                        nameHouse="Chalé Aroeira"
+                        typeHouse="Padrão"
+                        areaTotal="24,00"
+                        larguraXFundo="3,30 x 7,35"
+                        loteMinimo="6 x 15"
+                        pavimentos="01"
                         quartos="01"
                         suites="-"
                         banheiros="01"
                         garagem="-"
                         gourmet="-"
+                        price={11121.35}
                     />
                     <House 
                         imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/c2c98643-0a28-49ca-4b53-e004013ce100/public"
@@ -95,6 +96,7 @@ export default function Portfolio() {
                         banheiros="01"
                         garagem="-"
                         gourmet="-"
+                        price={15795.76}
                     />
                     <House 
                         imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/59fbe6f7-055a-4dc7-9419-75fcbc831100/public"
@@ -109,20 +111,22 @@ export default function Portfolio() {
                         banheiros="01"
                         garagem="-"
                         gourmet="-"
+                        price={23558.86}
                     />
                     <House 
-                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/94049068-fdfa-4ff8-cd77-c4059079c200/public"
-                        nameHouse="Chalé Aroeira"
-                        typeHouse="Padrão"
-                        areaTotal="24,00"
-                        larguraXFundo="3,30 x 7,35"
-                        loteMinimo="6 x 15"
-                        pavimentos="01"
+                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public"
+                        nameHouse="Chalé Araucária"
+                        typeHouse="A-frame"
+                        areaTotal="85,47"
+                        larguraXFundo="7,60 x 9,52"
+                        loteMinimo="12 x 30"
+                        pavimentos="02"
                         quartos="01"
                         suites="-"
                         banheiros="01"
                         garagem="-"
                         gourmet="-"
+                        price={37361.57}
                     />
                 </Houses>
             </Container>

@@ -15,7 +15,6 @@ const Item = styled.li`
     transition: background-color 220ms ease, border 220ms ease, transform 220ms ease;
 
     ${props => props.$isOpen && css`
-        background-color: transparent;
         box-shadow: inset 0 0 0 0.2px rgba(0, 0, 0, 0.4);
     `}
 

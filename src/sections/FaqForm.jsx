@@ -7,13 +7,13 @@ const Container = styled.section`
     width: 100%;
     height: auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 14px;
     padding: 14px 18px;
-    background-color: var(--color--white);
-    border: 1px solid #00000010;
+    background-color: var(--color--black);
+    border: 1px solid #ffffff10;
     border-radius: 22px;
 
     @media (max-width: 768px) {
@@ -29,7 +29,7 @@ export default function FaqForm() {
     return (
         <>
             <Container>
-                <FAQ />
+                {/* <FAQ /> */}
                 <Form />    
             </Container>  
         </>

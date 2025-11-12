@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DescriptionStyled = styled.p`
     font-size: ${({ fontSize }) => fontSize || "22px"};
-    color: ${({ textColor }) => textColor || "var(--color--black)"};
+    color: ${({ textColor }) => textColor || "var(--color--white)"};
     line-height: 1.1;
     font-weight: 400;
 
@@ -15,7 +15,7 @@ const DescriptionStyled = styled.p`
     & b {
         font-weight: 400;
         line-height: 1.1;
-        color: ${({ colorAdjust }) => colorAdjust || "var(--color--black)"};
+        color: ${({ colorAdjust }) => colorAdjust || "var(--color--white)"};
     }
 `
 

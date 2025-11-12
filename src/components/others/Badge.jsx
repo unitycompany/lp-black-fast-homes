@@ -8,8 +8,8 @@ const Content = styled.div`
     justify-content: center;
     gap: 6px;
     padding: 8px 10px;
-    background: var(--color--green-surface);
-    border: 1px solid var(--color--green-border);
+    background: var(--color--white-surface);
+    border: 1px solid var(--color--white-border);
     border-radius: 16px;
 
     @media (max-width: 768px){
@@ -28,7 +28,7 @@ const Content = styled.div`
     & svg {
         width: max-content;
         height: 34px;
-        fill: var(--color--green);
+        fill: var(--color--white);
 
         @media (max-width: 768px){
             fill: var(--color--white);
@@ -47,8 +47,8 @@ const Content = styled.div`
 
         & span {
             font-size: 18px;
-            font-weight: 600;
-            color: var(--color--green);
+            font-weight: 500;
+            color: var(--color--white);
 
             @media (max-width: 768px){
                 color: var(--color--white);
@@ -60,7 +60,7 @@ const Content = styled.div`
         & p {
             font-size: 14px;
             font-weight: 300;
-            color: var(--color--green);
+            color: var(--color--white);
 
             @media (max-width: 768px){
                 color: var(--color--white);

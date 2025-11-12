@@ -47,12 +47,12 @@ export default function Chart({ years = defaultYears, values = defaultValues, st
           type: 'line',
           symbol: 'circle',
           symbolSize: 12,
-          lineStyle: { width: 2, color: '#828e51' },
-          itemStyle: { color: '#828e51', borderWidth: 1, borderColor: '#fff' },
+          lineStyle: { width: 2, color: '#E42024' },
+          itemStyle: { color: '#E42024', borderWidth: 1, borderColor: '#fff' },
           areaStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               { offset: 0, color: '#4d561540' },
-              { offset: 1, color: '#828e5110' }
+              { offset: 1, color: '#E4202410' }
             ])
           }
         }
