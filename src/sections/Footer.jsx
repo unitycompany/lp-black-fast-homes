@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import alephwebdev from "../assets/logotipo/icon-black-aleph-desenvolvedor-web.svg";
+import AlephsramosdevWidget from "../components/AlephsramosdevWidget";
 
 const Container = styled.footer`
     width: 100%;
@@ -21,7 +22,7 @@ const Container = styled.footer`
         gap: 20px;
     }
 
-    & p {
+    & > p {
         font-size: 16px;
         font-weight: 300;
         color: var(--color--white);
@@ -29,12 +30,6 @@ const Container = styled.footer`
         align-items: center;
         justify-content: center;
         gap: 8px;
-
-        & img {
-            width: 18px;
-            filter: invert(100%) brightness(500%);
-            object-fit: contain;
-        }
     }
 `
 
@@ -43,7 +38,7 @@ export default function Footer () {
         <>
             <Container>
                 <p>Todos os direitos reservados | CNPJ: 40.436.034/0001-48 | Fast Homes</p>
-                <p>by <a href="http://wa.me/5524981411940" target="_blank"><img src={alephwebdev} alt="" /></a></p>
+                <AlephsramosdevWidget />
             </Container>
         </>
     )
