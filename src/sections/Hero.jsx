@@ -102,8 +102,8 @@ export default function Hero() {
             <Container>
                 <Texts>
                     <Title 
-                        children={"<b>BLACK EXCLUSIVA FAST HOMES</b> Apenas 5 estruturas de cada modelo. Sem segunda chance."}
-                        fontSize="38px"
+                        children={"<b>BLACK EXCLUSIVA FAST HOMES</b> <span>Apenas 5 estruturas</span> de cada modelo. Sem segunda chance."}
+                        fontSize="36px"
                         fontSizeMobile="28px"
                         colorAdjust="var(--color--green)"
                     />

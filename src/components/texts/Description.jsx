@@ -13,7 +13,7 @@ const DescriptionStyled = styled.p`
     }
 
     & b {
-        font-weight: 400;
+        font-weight: 600;
         line-height: 1.1;
         color: ${({ colorAdjust }) => colorAdjust || "var(--color--white)"};
     }

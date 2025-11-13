@@ -12,9 +12,13 @@ const TitleStyled = styled.h1`
     }
 
     & b {
-        font-weight: 400;
+        font-weight: 600;
         line-height: 1;
         color: ${({ colorAdjust }) => colorAdjust || "var(--color--white)"};
+    }
+
+    & > span {
+        text-decoration: underline;
     }
 `
 
