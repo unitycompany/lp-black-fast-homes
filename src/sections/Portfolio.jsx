@@ -122,10 +122,8 @@ export default function Portfolio() {
                         loteMinimo="12 x 30"
                         pavimentos="02"
                         quartos="01"
-                        suites="-"
                         banheiros="01"
-                        garagem="-"
-                        gourmet="-"
+                        cozinha="Cozinha independente"
                         price={37361.57}
                     />
                 </Houses>

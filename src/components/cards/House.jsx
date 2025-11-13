@@ -176,6 +176,15 @@ const Info = styled.div`
             padding: 6px 0;
             border-bottom: 1px solid #00000010;
 
+            &:last-child {
+                border-bottom: none;
+            }
+
+            & .cozinha {
+                font-size: 16px;
+                color: var(--color--black-light);
+            }
+
             & p {
                 font-size: 14px;
                 color: var(--color--black-light);
@@ -231,10 +240,8 @@ export default function House({
     loteMinimo,
     pavimentos,
     quartos,
-    suites,
     banheiros,
-    garagem,
-    gourmet,
+    cozinha = 'Cozinha integrada ao ambiente',
     price = 120000
 }) {
     const [expanded, setExpanded] = useState(false);
@@ -317,20 +324,11 @@ export default function House({
                             <span>{quartos}</span>
                         </li>
                         <li data-aos="fade-up">
-                            <p>Suítes</p>
-                            <span>{suites}</span>
-                        </li>
-                        <li data-aos="fade-up">
                             <p>Banheiros</p>
                             <span>{banheiros}</span>
                         </li>
                         <li data-aos="fade-up">
-                            <p>Garagem</p>
-                            <span>{garagem}</span>
-                        </li>
-                        <li data-aos="fade-up">
-                            <p>Espaço gourmet</p>
-                            <span>{gourmet}</span>
+                            <p className="cozinha">{cozinha}</p>
                         </li>
                     </ul>
                 </Info>
