@@ -133,7 +133,7 @@ export default function Hero() {
                     </Buttons>
                 </Texts>
                 <Image data-aos="zoom-in">
-                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/228467bc-77eb-4cc7-0b2b-774660a36f00/public" alt="" />
+                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/a6a48fa7-133c-491b-5269-ddbb79172300/public" alt="" />
                 </Image>
             </Container>
         </>
