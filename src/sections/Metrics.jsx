@@ -153,7 +153,7 @@ export default function Metrics() {
                         <Description 
                             children={`Conseguimos travar um lote específico da produção com condições que <b>NÃO VÃO SE REPETIR</b>. 
                             <br /><br />    
-                            São só 5 estruturas de cada modelo. Acabou essa remessa, o próximo lote entra no preço real de mercado.`}
+                            <b>São só 5 estruturas de cada modelo</b>. Acabou essa remessa, o próximo lote entra no preço real de mercado.`}
                             fontSize="20px"
                             fontSizeMobile='18px'
                             colorAdjust="var(--color--green)"
