@@ -225,7 +225,7 @@ export default function Form() {
             <Container>
                 <Title 
                     children={"Preencha o formulário para entrar em contato"}
-                    textColor="var(--color--white)"
+                    textColor="var(--color--black)"
                     fontSize="32px"
                 />
                 {sent ? (

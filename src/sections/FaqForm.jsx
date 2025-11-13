@@ -12,7 +12,7 @@ const Container = styled.section`
     flex-direction: row;
     gap: 14px;
     padding: 14px 18px;
-    background-color: var(--color--black);
+    background-color: var(--color--white);
     border: 1px solid #ffffff10;
     border-radius: 22px;
 
