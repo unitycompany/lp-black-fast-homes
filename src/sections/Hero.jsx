@@ -86,7 +86,7 @@ const Image = styled.div`
     & img {
         width: 100%;
         height: 100%;
-        min-height: 420px;
+        min-height: 480px;
         object-fit: cover;
         border-radius: 16px;
 
@@ -102,36 +102,31 @@ export default function Hero() {
             <Container>
                 <Texts>
                     <Title 
-                        children={"Por que aguardar <b>18 meses</b> quando é possível iniciar sua operação em <b>4?</b>"}
-                        fontSize="46px"
+                        children={"<b>BLACK EXCLUSIVA FAST HOMES</b> Apenas 5 estruturas de cada modelo. Sem segunda chance."}
+                        fontSize="38px"
                         fontSizeMobile="28px"
                         colorAdjust="var(--color--green)"
                     />
                     <Description 
-                        children="Chalés Fast Homes: orçamento <b>definido</b>, arquitetura <b>acolhedora</b>, estrutura <b>certificada</b>"
-                        fontSize="22px"
+                        children="Você sabe quanto custa uma estrutura certificada em steel frame com arquitetura validada? Então já sabe que na Fast Homes o desconto é de verdade. <b>São apenas 5 unidades de cada modelo</b> a um preço que você nunca mais vai encontrar."
+                        fontSize="20px"
+                        fontSizeMobile="18px"
+                        colorAdjust="var(--color--white-light)"
+                    />
+                    <Description 
+                        children="Enquanto você fica pensando, já tem gente FATURANDO."
+                        fontSize="20px"
                         fontSizeMobile="18px"
                         colorAdjust="var(--color--white-light)"
                     />
                     <Buttons>
                         <Button
-                            buttonText="Falar com um consultor"
+                            buttonText="Garantir minha condição agora"
                             color="var(--color--white)"
                             textColor="var(--color--black)"
                             colorBorder="var(--color--white)"
                             onClick={() => {
                                 const el = document.getElementById('contactForm');
-                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            }}
-                        />
-                        <Button
-                            buttonText="Saber mais"
-                            color="transparent"
-                            colorBorder="var(--color--black-light)"
-                            textColor="var(--color--black-light)"
-                            fontWeight="400"
-                            onClick={() => {
-                                const el = document.getElementById('airbnbSection');
                                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                             }}
                         />

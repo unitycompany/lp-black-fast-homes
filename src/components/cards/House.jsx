@@ -269,6 +269,7 @@ export default function House({
                     </aside>
                     <Button 
                         color="var(--color--white)"
+                        buttonText="Garantir essa estrutura"
                         textColor="var(--color--black)"
                         colorBorder="var(--color--white)"
                         onClick={() => {

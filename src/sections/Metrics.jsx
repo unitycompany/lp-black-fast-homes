@@ -34,7 +34,7 @@ const Texts = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 22px;
-    width: 50%;
+    width: 75%;
     padding: 12px;
 
     @media (max-width: 768px){
@@ -123,14 +123,14 @@ export default function Metrics() {
             <Container ref={containerRef}>
                 <Texts>
                     <Title 
-                        children={`Você já viveu isso: <b>344% de crescimento</b> não surge do nada`}
+                        children={`O mercado de <b>chalés para Airbnb</b> não para de crescer. Você está dentro ou está assistindo?`}
                         colorAdjust={"var(--color--green)"}
                     />
                 </Texts>
                 <Content>
                     <Grafic>
                         <Title 
-                            children={`Métricas do crescimento pela <b>busca de chalés <i>(unique stays)</i></b> na escolha da hospedagem`}
+                            children={`<b>Você escolhe:</b> aproveitar essa oferta exclusiva, ou deixar essa oportunidade passar.`}
                             colorAdjust="var(--color--white-light)"
                             textColor="var(--color--white)"
                             fontSize="22px"
@@ -145,16 +145,21 @@ export default function Metrics() {
                     </Grafic>
                     <Infos>
                         <Title 
-                            children={`Quem entrou cedo está <b>faturando alto</b>. Quem ainda está <b>"pensando"</b>... bem, continua pensando.`}
+                            children={`A Black da Fast Homes é a oportunidade ideal para você aproveitar esse momento do mercado. `}
                             colorAdjust="var(--color--green)"
                             fontSize="28px"
                             fontSizeMobile="24px"
                         />
                         <Description 
-                            children={`<b>Diversas pesquisam apontam</b> o crescimento e a busca por cháles!`}
-                            colorAdjust="var(--color--white-light)"
+                            children={`Conseguimos travar um lote específico da produção com condições que <b>NÃO VÃO SE REPETIR</b>. 
+                            <br /><br />    
+                            São só 5 estruturas de cada modelo. Acabou essa remessa, o próximo lote entra no preço real de mercado.`}
+                            fontSize="20px"
+                            fontSizeMobile='18px'
+                            colorAdjust="var(--color--green)"
                         />
                         <Button 
+                            buttonText="Eu quero essa condição"
                             color="var(--color--white)"
                             textColor="var(--color--black)"
                             colorBorder="var(--color--white)"

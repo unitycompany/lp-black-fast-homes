@@ -36,6 +36,22 @@ const Texts = styled.div`
     padding: 8px 12px;
     gap: 12px;
 
+    & > h1 {
+        width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    & > p {
+        width: 50%;
+        
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 16px;
@@ -59,11 +75,11 @@ export default function Portfolio() {
             <Container>
                 <Texts>
                     <Title 
-                        children={`Dois projetos estratégicos para <b>diferentes segmentos</b>`}
+                        children={`Lote único. Apenas 5 de cada modelo. <b>Sem reposição.</b>`}
                         colorAdjust="var(--color--green)"
                     />
                     <Description 
-                        children={"<b>Em breve teremos mais modelos disponíveis e lembre-se</b>, você pode ter um personalizado"}
+                        children={"Estruturas em steel frame certificadas, arquitetura pronta para hospedar e faturar. A infraestrutura é nossa. O acabamento e charme Instagramável são seus."}
                         colorAdjust={"var(--color--green)"}
                     />
                 </Texts>
