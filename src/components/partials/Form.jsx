@@ -93,24 +93,21 @@ export default function Form() {
         setStep(nextStep);
         // focus after render
         setTimeout(() => {
+            if (!nextId) return;
             const el = document.getElementById(nextId);
-            if (el) {
-                el.focus();
-                // move caret to end
-                if (typeof el.setSelectionRange === "function") {
-                    const len = el.value ? el.value.length : 0;
-                    el.setSelectionRange(len, len);
-                }
+            if (!el) return;
+            el.focus();
+            // move caret to end
+            if (typeof el.setSelectionRange === "function") {
+                const len = el.value ? el.value.length : 0;
+                el.setSelectionRange(len, len);
             }
         }, 0);
     };
 
-    const handleFinish = () => {
+    const handleLastStepConfirm = () => {
+        // keep user on last step without triggering submission
         setStep(3);
-        // finalize: submit the form to webhook
-        // set UI to sent immediately and send in background
-        setSent(true);
-        sendToWebhook(values);
     };
 
     const handleSubmit = (e) => {
@@ -268,10 +265,10 @@ export default function Form() {
                         idInput="tel"
                         value={values.tel}
                         onChange={handleChange("tel")}
-                        // locked until user advances to step 3 (presses Enter or Enviar on step 2)
+                        // locked until user advances to step 3 (presses Enter ou Enviar on step 2)
                         locked={step < 3}
                         isCurrent={step === 3}
-                        onNext={handleFinish}
+                        onNext={handleLastStepConfirm}
                     />
                     {isNameValid(values.name) && isEmailValid(values.email) && isTelValid(values.tel) ? (
                         <Submit type="submit" disabled={submitting || submitted}>
