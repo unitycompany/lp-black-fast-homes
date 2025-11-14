@@ -36,7 +36,11 @@ const Texts = styled.div`
     width: 50%;
 
     & img {
-        width: 240px;
+        width: 320px;
+
+        @media (max-width: 768px){
+            width: 260px;
+        }
     }
 
     @media (max-width: 768px){
