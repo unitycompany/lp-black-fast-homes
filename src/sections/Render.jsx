@@ -36,8 +36,8 @@ export default function Render() {
             <Content>
                 {/* <Header /> */}
                     <Hero />
-                        <Metrics />
                             <Portfolio />
+                        <Metrics />
                                     <FaqForm />
                                         <Footer />
             </Content>
