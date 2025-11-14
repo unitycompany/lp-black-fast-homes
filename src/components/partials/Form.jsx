@@ -108,6 +108,18 @@ export default function Form() {
     const handleLastStepConfirm = () => {
         // keep user on last step without triggering submission
         setStep(3);
+        // move focus to CTA when available so Enter still flows naturally
+        setTimeout(() => {
+            const submitBtn = document.getElementById('contactFormSubmit');
+            if (submitBtn) {
+                submitBtn.focus();
+                return;
+            }
+            const telField = document.getElementById('tel');
+            if (telField) {
+                telField.focus();
+            }
+        }, 0);
     };
 
     const handleSubmit = (e) => {
@@ -271,7 +283,7 @@ export default function Form() {
                         onNext={handleLastStepConfirm}
                     />
                     {isNameValid(values.name) && isEmailValid(values.email) && isTelValid(values.tel) ? (
-                        <Submit type="submit" disabled={submitting || submitted}>
+                        <Submit id="contactFormSubmit" type="submit" disabled={submitting || submitted}>
                             {submitting ? "Enviando..." : "Enviar e falar com o consultor"}
                         </Submit>
                     ) : null}
