@@ -35,8 +35,13 @@ const Texts = styled.div`
     gap: 32px;
     width: 50%;
 
+    & img {
+        width: 240px;
+    }
+
     @media (max-width: 768px){
         width: 100%;
+        gap: 16px;
     }
 `
 
@@ -101,8 +106,9 @@ export default function Hero() {
         <>
             <Container>
                 <Texts>
+                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/91e0da1a-221b-49f8-5354-4dd0a8fc8f00/public" alt="" />
                     <Title 
-                        children={"<b>BLACK EXCLUSIVA FAST HOMES</b> <span>Apenas 5 estruturas</span> de cada modelo. Sem segunda chance."}
+                        children={"<span>Apenas 5 estruturas</span> de cada modelo. Sem segunda chance."}
                         fontSize="36px"
                         fontSizeMobile="28px"
                         colorAdjust="var(--color--green)"
