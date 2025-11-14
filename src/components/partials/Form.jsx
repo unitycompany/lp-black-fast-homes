@@ -105,20 +105,35 @@ export default function Form() {
         }, 0);
     };
 
+    const requestFormSubmit = () => {
+        const form = document.getElementById('contactForm');
+        if (!form) return;
+        if (typeof form.requestSubmit === 'function') {
+            form.requestSubmit();
+        } else {
+            form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+        }
+    };
+
     const handleLastStepConfirm = () => {
-        // keep user on last step without triggering submission
+        // keep user on last step without triggering submission prematurely
         setStep(3);
-        // move focus to CTA when available so Enter still flows naturally
         setTimeout(() => {
-            const submitBtn = document.getElementById('contactFormSubmit');
-            if (submitBtn) {
-                submitBtn.focus();
+            const telField = document.getElementById('tel');
+            if (!telField) return;
+
+            if (typeof telField.checkValidity === 'function' && !telField.checkValidity()) {
+                try { telField.reportValidity(); } catch (err) {}
+                telField.focus();
                 return;
             }
-            const telField = document.getElementById('tel');
-            if (telField) {
-                telField.focus();
+
+            if (isNameValid(values.name) && isEmailValid(values.email) && isTelValid(values.tel)) {
+                requestFormSubmit();
+                return;
             }
+
+            telField.focus();
         }, 0);
     };
 
