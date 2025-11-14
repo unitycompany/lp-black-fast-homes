@@ -19,6 +19,7 @@ const TitleStyled = styled.h1`
 
     & > span {
         text-decoration: underline;
+        color: #11cc00;
     }
 `
 

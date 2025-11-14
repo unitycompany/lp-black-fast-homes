@@ -32,15 +32,11 @@ const Texts = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 32px;
+    gap: 26px;
     width: 50%;
 
     & img {
-        width: 320px;
-
-        @media (max-width: 768px){
-            width: 260px;
-        }
+        width: 100%;
     }
 
     @media (max-width: 768px){
@@ -110,7 +106,7 @@ export default function Hero() {
         <>
             <Container>
                 <Texts>
-                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/91e0da1a-221b-49f8-5354-4dd0a8fc8f00/public" alt="" />
+                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/50d64054-3b17-4e34-5fd7-1c2801fd2d00/public" alt="" />
                     <Title 
                         children={"<span>Apenas 5 estruturas</span> de cada modelo. Sem segunda chance."}
                         fontSize="36px"
