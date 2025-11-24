@@ -17,6 +17,11 @@ const TitleStyled = styled.h1`
         color: ${({ colorAdjust }) => colorAdjust || "var(--color--white)"};
     }
 
+    & strong {
+        font-weight: 700;
+        line-height: 1;
+    }
+    
     & > span {
         text-decoration: underline;
         color: #11cc00;

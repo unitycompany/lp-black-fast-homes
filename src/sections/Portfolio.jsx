@@ -75,7 +75,7 @@ export default function Portfolio() {
             <Container>
                 <Texts>
                     <Title 
-                        children={`<b>Lote Exclusivo.</b> <br/>Apenas 5 de cada modelo.`}
+                        children={`<b>Lote Exclusivo.</b> <br/><strong>Apenas 5 de cada modelo.<strong>`}
                         colorAdjust="var(--color--green)"
                     />
                     <Description 
