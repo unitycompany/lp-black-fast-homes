@@ -26,6 +26,11 @@ const TitleStyled = styled.h1`
         text-decoration: underline;
         color: #11cc00;
     }
+
+    & > p{
+        font-size: 22px;
+        line-height: 1;
+    }
 `
 
 export default function Title({

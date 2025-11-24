@@ -224,9 +224,13 @@ const Price = styled.div`
         color: var(--color--white-light);
 
         & strong {
-            font-weight: 600;
-            font-size: 20px;
+            font-weight: 700;
+            font-size: 24px;
             color: var(--color--green);
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+            }
         }
     }
 `
@@ -257,10 +261,10 @@ export default function House({
                     <aside>
                         {/* <span>Modelo {typeHouse}</span> */}
                         <Title 
-                            children={nameHouse}
+                            children={`${nameHouse} <p>${areaTotal}m²</p>`}
                             fontSize="28px"
                             textColor="var(--color--white)"
-                            fontSizeMobile="32px"
+                            fontSizeMobile="28px"
                         />
                         <Price>
                             <h2>De <strong>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price * 1.3)}</strong></h2>
