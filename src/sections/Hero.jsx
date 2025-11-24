@@ -19,6 +19,7 @@ const Container = styled.section`
     border-radius: 22px;
 
     @media (max-width: 768px) {
+        gap: 12px;
         width: 100%;
         padding: 10px 12px;
         flex-direction: column-reverse;
@@ -41,7 +42,7 @@ const Texts = styled.div`
 
     @media (max-width: 768px){
         width: 100%;
-        gap: 16px;
+        gap: 26px;
     }
 `
 
@@ -108,22 +109,10 @@ export default function Hero() {
                 <Texts>
                     <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/50d64054-3b17-4e34-5fd7-1c2801fd2d00/public" alt="" />
                     <Title 
-                        children={"<span>Apenas 5 estruturas</span> de cada modelo. Sem segunda chance."}
+                        children={"Na Fast Homes a Black é de verdade. <br/><br/><span>São apenas 5 unidades de cada modelo</span> a um preço que você nunca mais vai encontrar."}
                         fontSize="36px"
-                        fontSizeMobile="28px"
+                        fontSizeMobile="22px"
                         colorAdjust="var(--color--green)"
-                    />
-                    <Description 
-                        children="Você sabe quanto custa uma estrutura certificada em steel frame com arquitetura validada? Então já sabe que na Fast Homes o desconto é de verdade. <b>São apenas 5 unidades de cada modelo</b> a um preço que você nunca mais vai encontrar."
-                        fontSize="20px"
-                        fontSizeMobile="18px"
-                        colorAdjust="var(--color--white-light)"
-                    />
-                    <Description 
-                        children="Enquanto você fica pensando, já tem gente FATURANDO."
-                        fontSize="20px"
-                        fontSizeMobile="18px"
-                        colorAdjust="var(--color--white-light)"
                     />
                     <Buttons>
                         <Button

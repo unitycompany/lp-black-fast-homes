@@ -34,7 +34,7 @@ const Texts = styled.div`
     justify-content: space-between;
     flex-direction: row;
     padding: 8px 12px;
-    gap: 12px;
+    gap: 26px;
 
     & > h1 {
         width: 50%;
@@ -75,11 +75,11 @@ export default function Portfolio() {
             <Container>
                 <Texts>
                     <Title 
-                        children={`Lote único. Apenas 5 de cada modelo. <b>Sem reposição.</b>`}
+                        children={`<b>Lote Exclusivo.</b> <br/>Apenas 5 de cada modelo.`}
                         colorAdjust="var(--color--green)"
                     />
                     <Description 
-                        children={"Estruturas em steel frame certificadas, arquitetura pronta para hospedar e faturar. A infraestrutura é nossa. O acabamento e charme Instagramável são seus."}
+                        children={"A infraestrutura é nossa. O acabamento e charme Instagramável são seus."}
                         colorAdjust={"var(--color--green)"}
                     />
                 </Texts>

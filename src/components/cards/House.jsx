@@ -255,7 +255,7 @@ export default function House({
                 </Image>
                 <Name data-aos="fade-up">
                     <aside>
-                        <span>Modelo {typeHouse}</span>
+                        {/* <span>Modelo {typeHouse}</span> */}
                         <Title 
                             children={nameHouse}
                             fontSize="28px"
