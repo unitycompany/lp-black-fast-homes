@@ -38,7 +38,6 @@ export default function Footer () {
         <>
             <Container>
                 <p>Todos os direitos reservados | CNPJ: 40.436.034/0001-48 | Fast Homes</p>
-                <AlephsramosdevWidget />
             </Container>
         </>
     )
